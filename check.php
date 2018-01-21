@@ -35,6 +35,15 @@ foreach($modules as $module)
 	}
 }
 
+if(!defined("\PDO::MYSQL_ATTR_LOCAL_INFILE"))
+#if(!extension_loaded("pdo_mysql"));
+{
+	$errors[] = array(
+		"name" => "PDO MySQL",
+		"help" => "",
+	);
+}
+
 /**
  * Process requirements matching status
  */
@@ -50,6 +59,7 @@ else
 		#$lacking[] = "{$module['name']}: {$module['class']}->{$module['method']}();";
 		$lacking[] = "{$module['name']}: {$module['help']}";
 	}
-	echo "You are lack following modules:", "\r\n\t";
+	echo "You are lacking these modules:", "\r\n\t";
 	echo implode("\r\n\t", $lacking);
 }
+echo "\r\n";

@@ -10,3 +10,4 @@ List of what you need to have are maintained in:
 
 	modules-*.php
 
+Flag `required` is processed.
