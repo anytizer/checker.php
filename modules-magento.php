@@ -3,6 +3,7 @@
  * This list of modules is primarily based on Magento 2's system requirements.
  * For your own application, you can manage your own list of modules.
  *
+ * @see https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements-tech.html
  * @see http://devdocs.magento.com/guides/v2.0/install-gde/system-requirements-tech.html
  *
  * PHP Classes are being accesed from root namespace \.
